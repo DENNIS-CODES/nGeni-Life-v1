@@ -32,26 +32,13 @@ export default function Ngenilife() {
     if (loading) return "Loading...";
     if (error) return "Error!";
 
-            for (var r of data){
-            return (
-                <div class="container-fluid">
-                        <div class="event row">
-                            <div class="event-preview col-sm-10 col-md-11">
-                            <LinkPreview margin="30px auto" width="500px" url={r.link}/>
-                                <h7>What I was reading</h7>
-                                <h2>{r.comment}</h2>
-                                <h2><a href={r.link}>{r.link}</a></h2>
-                                <div class="bt">
-                                    <a type="button" class="btn btn-info text-center" href={r.link} target="_blank">Find Out More</a>
-                                </div>
-                            </div>
-
-                            <div class="event-info col-sm-2 col-md-1">
-                                <h6 class="text-center">Posted On</h6>
-                                <p>{new Date(r.createdAt.toString('M/dd/yyyy'))} </p>
-                            </div>
-                        </div>
+            Promise.all(data).then(results => {
+                const updates = results.map(result => result.data[0]);
+                return( 
+                <div className="container-fluid">
+                    <LinkPreview margin="30px auto" width="500px" url={updates.link}/>
                 </div>
-            );
-        }
-     }   
+                )
+            })
+    }
+        
