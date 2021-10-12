@@ -230,7 +230,7 @@ table th {
   text-decoration: none;
 }
 .row a {
-  color: whitesmoke;
+  color: rgb(226, 13, 13);
   text-decoration: none;
   
 }
@@ -392,7 +392,7 @@ table th {
   text-decoration: underline;
 }
 
-.c59 {
+.root {
   background-color: #434343;
   min-width: 60%;
   /* padding: 14.2pt 72pt 26.6pt 72pt; */
