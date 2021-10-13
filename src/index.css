@@ -1,5 +1,6 @@
-body {
-  padding: 0 2em 0 2em;
+* {
+  padding: 0;
+  margin: 0;
 }
 #menuToggle
 {
@@ -821,4 +822,11 @@ color: #f5f5f5 !important;
 .logo-part {
 border-right: 1px solid grey;
 height: 100%;
+}
+
+
+/* nGeni Life Page*/
+
+div.header-fluid {
+  display: column;
 }
