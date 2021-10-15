@@ -1,16 +1,46 @@
 body {
     background-color: black;
     padding-left: initial;
-}
-
-.App {
     display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
 }
-
-.container {
+.Description Secondary {
+    color: white;
+}
+ .App {
+    border: 1px solid #000000;
     background-color: black;
+    display: grid;
+    grid-template-columns: 20em 20em 20em;
+    grid-gap: 20px;
+    height: 20px;
+    margin: 8px;
 }
 
+.header-link {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+} 
+  
+  .Image {
+    width: 100%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    height: 50vh; }
+  
+  /* .SiteDetails {
+    margin-top: 10px; } */
+  
+  /* sm */
+  /* @media (max-width: 640px) {
+    .Description {
+      display: grid; } } */
+  
+  /* md */
+  /* @media (min-width: 641px) and (max-width: 768px) {
+    .Description {
+      display: grid; } } */
