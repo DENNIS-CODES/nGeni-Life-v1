@@ -5,9 +5,7 @@ import classes from './Header.module.css'
 function Header() {
     return (
         <header className={classes.header}>
-            <img src={logo} style={{}
-                height: 200px;
-}}/>
+            <img src={logo} width="250px" height="250px"/>
         </header>
     )
 }
