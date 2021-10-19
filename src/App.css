@@ -1,8 +1,10 @@
-body {
+ body {
   background-color: black;
   padding-left: initial;
   display: grid;
 }
+
+/*
 
 .Description Secondary {
   color: white;
@@ -50,14 +52,19 @@ body {
 /* @media (min-width: 641px) and (max-width: 768px) {
     .Description {
       display: grid; } } */
-
-.home {
+.MuiBox-root css-{
+  background-color: black;
+}
+.Container {
+  background-color: #1e1818 !important;
   text-align: left;
   display: flex;
-  flex-direction: column;
-  border-radius: 7px;
-  border: #e62524;
-  color: #232121;
+  flex-direction: column-reverse;
+  margin: 6px;
+  padding: 10px;
+  border-radius: 9px;
+  border-color: #1e1818 !important;
   transition: 0.3s all ease;
-  height: 100%;
-}
+  height: 70%;
+} 
+

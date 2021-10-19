@@ -3,6 +3,7 @@ import React from 'react'
 import classes from './Post.module.css'
 
 function Post({post}) {
+    console.log(post.image); 
     return (
         <li className={classes.item}>
         <Card
@@ -13,8 +14,9 @@ function Post({post}) {
         }}>
         <CardMedia 
         component="img"
-        image={post.image} 
+        image={post.image}
         />
+        
         <CardContent>
             <Typography variant='h3' component="div">
                 {post.title}
@@ -27,5 +29,4 @@ function Post({post}) {
     </li>
     )
 }
-
 export default Post
