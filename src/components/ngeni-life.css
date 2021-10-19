@@ -1,0 +1,10 @@
+.home {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    border: #e62524;
+    color: #232121;
+    transition: 0.3s all ease;
+    height: 100%;
+  }

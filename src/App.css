@@ -1,46 +1,63 @@
 body {
-    background-color: black;
-    padding-left: initial;
-    display: grid;
+  background-color: black;
+  padding-left: initial;
+  display: grid;
 }
+
 .Description Secondary {
-    color: white;
+  color: white;
 }
- .App {
-    border: 1px solid #000000;
-    background-color: black;
-    display: grid;
-    grid-template-columns: 20em 20em 20em;
-    grid-gap: 20px;
-    height: 20px;
-    margin: 8px;
+
+.App {
+  border: 1px solid #000000;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin: 8px;
+}
+
+.App.components {
+  border: 1px solid #e62524;
 }
 
 .header-link {
-    font-size: 50px;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-} 
-  
-  .Image {
-    width: 100%;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
-    background-size: cover;
-    background-repeat: repeat;
-    background-position: center;
-    height: 50vh; }
-  
-  /* .SiteDetails {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.Image {
+  width: 100%;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  height: 50vh;
+}
+
+/* .SiteDetails {
     margin-top: 10px; } */
-  
-  /* sm */
-  /* @media (max-width: 640px) {
+
+/* sm */
+/* @media (max-width: 640px) {
     .Description {
       display: grid; } } */
-  
-  /* md */
-  /* @media (min-width: 641px) and (max-width: 768px) {
+
+/* md */
+/* @media (min-width: 641px) and (max-width: 768px) {
     .Description {
       display: grid; } } */
+
+.home {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+  border: #e62524;
+  color: #232121;
+  transition: 0.3s all ease;
+  height: 100%;
+}
