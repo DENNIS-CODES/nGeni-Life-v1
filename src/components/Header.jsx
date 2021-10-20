@@ -3,7 +3,7 @@ import classes from './Header.module.css'
 function Header() {
     return (
         <header className={classes.header}>
-            WELCOME TO nGeni LIFE
+            WELCOME TO nGeni LIFE🔥 
         </header>
     )
 }
